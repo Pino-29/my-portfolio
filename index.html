@@ -1,11 +1,151 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="css/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
 </head>
-<body>
-</body>
-</html>
+<body class="font-sans text-gray-900 antialiased">
+    <!-- NAVIGATION -->
+    <header class="fixed top-0 w-full bg-white/70 backdrop-blur-md z-50">
+      <nav class="container mx-auto flex justify-between px-6 py-3">
+        <h1 class="text-xl font-bold">Roberto Jesús García Pino</h1>
+        <ul class="flex space-x-6">
+          <li><a href="#hero" class="hover:underline">About</a></li>
+          <li><a href="#education" class="hover:underline">Education</a></li>
+          <li><a href="#experience" class="hover:underline">Experience</a></li>
+          <li><a href="#projects" class="hover:underline">Projects</a></li>
+          <li><a href="#camps" class="hover:underline">Camps</a></li>
+          <li><a href="#awards" class="hover:underline">Awards</a></li>
+          <li><a href="#skills" class="hover:underline">Skills</a></li>
+          <li><a href="#languages" class="hover:underline">Languages</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="pt-20">
+  
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative h-screen bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white">
+        <div class="flex flex-col items-center justify-center h-full px-4">
+            <h2 class="text-5xl font-bold mb-4">Hi, I'm Roberto Jesús García Pino</h2>
+            <p class="text-lg mb-6">Software Engineer Student</p>
+            <a href="#projects" class="bg-blue-600 px-6 py-3 rounded-full hover:bg-blue-700 transition">
+            View Projects
+            </a>
+            <div class="mt-6 text-gray-300 text-sm space-x-4">
+              <a href="mailto:garcia.pino.roberto@gmail.com" class="hover:underline">garcia.pino.roberto@gmail.com</a>
+              <span>|</span>
+              <a href="tel:+527531029793" class="hover:underline">+52 753 102 9793</a>
+              <span>|</span>
+              <span>Guadalajara, Jalisco, Mexico</span>
+            </div>
+        </div>
+    </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="container mx-auto py-12 px-4">
+    <h2 class="text-2xl font-semibold mb-6 mt-2 after:content-[''] after:block after:w-20 after:h-1 after:bg-blue-600 after:rounded">Education</h2>
+    <div>
+      <h3 class="font-bold">University of Guadalajara</h3>
+      <p class="text-gray-600">Bachelor’s in Computer Engineering — Aug 2019 – Present</p>
+      <p class="text-gray-700">GPA: 88.51 (3.3)</p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="bg-gray-50 py-12 px-4">
+    <h2 class="text-2xl font-semibold mb-6 mt-2 after:content-[''] after:block after:w-20 after:h-1 after:bg-blue-600 after:rounded">Experience</h2>
+    <div class="space-y-8">
+      <div>
+        <h3 class="font-bold">Oracle (Integrations Team)</h3>
+        <p class="italic text-gray-600">Software Engineer Intern — June 2023 – Present</p>
+        <ul class="list-disc list-inside">
+          <li>Developed a cross-platform automation framework for data generation.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold">Google Cloud</h3>
+        <p class="italic text-gray-600">Software Engineer Intern — June 2022 – September 2022</p>
+        <ul class="list-disc list-inside">
+          <li>Improved error messaging in Google Cloud Storage through testing and manual reviews.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="container mx-auto py-12 px-4">
+    <h2 class="text-2xl font-semibold mb-6 mt-2 after:content-[''] after:block after:w-20 after:h-1 after:bg-blue-600 after:rounded">Projects</h2>
+    <div class="space-y-6">
+      <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition p-6">
+        <h3 class="font-bold">Call Center Manager</h3>
+        <p class="italic text-gray-600">Feb 2020 – June 2020</p>
+        <p class="text-gray-700">C++ application to manage call center personnel data using custom data structures.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition p-6">
+        <h3 class="font-bold">Memory Game</h3>
+        <p class="italic text-gray-600">Apr 2018 – June 2018</p>
+        <p class="text-gray-700">Classic memory matching game built with JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAMPS & WORKSHOPS -->
+  <section id="camps" class="bg-gray-50 py-12 px-4">
+    <h2 class="text-2xl font-semibold mb-6 mt-2 after:content-[''] after:block after:w-20 after:h-1 after:bg-blue-600 after:rounded">Camps & Workshops</h2>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+      <li>Virtual Competitive Programming Training Camp (Argentina) — July 2020</li>
+      <li>Winter Competitive Programming Workshop (IPN, Mexico City) — Jan 2020</li>
+    </ul>
+  </section>
+
+  <!-- AWARDS & HONORS -->
+  <section id="awards" class="container mx-auto py-12 px-4">
+    <h2 class="text-2xl font-semibold mb-6 mt-2 after:content-[''] after:block after:w-20 after:h-1 after:bg-blue-600 after:rounded">Awards & Honors</h2>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+      <li>ICPC World Finalist 2023</li>
+      <li>9th Place ICPC Mexico Regional 2023</li>
+      <li>15th Place ICPC Mexico Regional 2022</li>
+      <li>14th Place ICPC Mexico Regional 2021</li>
+      <li>1st Place Meta Spanish Hack 2022</li>
+    </ul>
+  </section>
+
+  <!-- TECHNICAL SKILLS -->
+  <section id="skills" class="bg-gray-50 py-12 px-4">
+    <h2 class="text-2xl font-semibold mb-6 mt-2 after:content-[''] after:block after:w-20 after:h-1 after:bg-blue-600 after:rounded">Technical Skills</h2>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 bg-blue-100 rounded">C++</span>
+      <span class="px-3 py-1 bg-blue-100 rounded">C</span>
+      <span class="px-3 py-1 bg-blue-100 rounded">Python</span>
+      <span class="px-3 py-1 bg-blue-100 rounded">HTML</span>
+      <span class="px-3 py-1 bg-blue-100 rounded">CSS</span>
+      <span class="px-3 py-1 bg-blue-100 rounded">JavaScript</span>
+      <span class="px-3 py-1 bg-blue-100 rounded">SQL</span>
+      <span class="px-3 py-1 bg-blue-100 rounded">Java</span>
+      <span class="px-3 py-1 bg-blue-100 rounded">Git</span>
+    </div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section id="languages" class="container mx-auto py-12 px-4">
+    <h2 class="text-2xl font-semibold mb-6 mt-2 after:content-[''] after:block after:w-20 after:h-1 after:bg-blue-600 after:rounded">Languages</h2>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+      <li>English — Professional Working Proficiency</li>
+      <li>Spanish — Native Proficiency</li>
+    </ul>
+  </section>
+  
+</main>
+    <!-- FOOTER (temporary) -->
+    <footer class="mt-12 border-t pt-6 text-gray-500 text-center">
+      <p class="text-sm">&copy; 2025 Roberto Jesús García Pino</p>
+    </footer>
+</body></html>
